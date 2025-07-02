@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProWrite Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-teal-600 text-white p-4 sticky top-0 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">ProWrite Services</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-teal-200">Home</a></li>
+                <li><a href="#services" class="hover:text-teal-200">Services</a></li>
+                <li><a href="#contact" class="hover:text-teal-200">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-teal-500 text-white h-96 flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Professional Writing & Tax Services</h2>
+            <p class="text-lg mb-6">Expert CVs, research projects, KRA returns, and cover letters tailored to your needs.</p>
+            <a href="#contact" class="bg-white text-teal-600 px-6 py-2 rounded-full hover:bg-teal-100">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+                <!-- CV Writing -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">CV Writing</h3>
+                    <p class="text-gray-600">Craft professional, ATS-friendly CVs to help you stand out in job applications.</p>
+                </div>
+                <!-- Research Projects -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Research Projects</h3>
+                    <p class="text-gray-600">Comprehensive support for academic and professional research projects, from proposals to final drafts.</p>
+                </div>
+                <!-- KRA Returns -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">KRA Returns</h3>
+                    <p class="text-gray-600">Accurate and timely KRA tax return filing for individuals and businesses in Kenya.</p>
+                </div>
+                <!-- Cover Letters -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Cover Letters</h3>
+                    <p class="text-gray-600">Personalized cover letters that highlight your strengths and align with job requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="text-lg max-w-2xl mx-auto mb-8">Ready to get started? Reach out to us for professional writing and tax services.</p>
+            <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+                <div class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-left text-gray-700">Name</label>
+                        <input type="text" id="name" class="w-full p-2 border rounded-md" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left text-gray-700">Email</label>
+                        <input type="email" id="email" class="w-full p-2 border rounded-md" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-left text-gray-700">Service Needed</label>
+                        <select id="service" class="w-full p-2 border rounded-md">
+                            <option value="">Select a Service</option>
+                            <option value="cv">CV Writing</option>
+                            <option value="research">Research Project</option>
+                            <option value="kra">KRA Returns</option>
+                            <option value="cover">Cover Letter</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-left text-gray-700">Message</label>
+                        <textarea id="message" class="w-full p-2 border rounded-md" rows="4" placeholder="Tell us about your needs"></textarea>
+                    </div>
+                    <button class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700" onclick="alert('Please email us at info@prowriteservices.com with your details!')">Submit</button>
+                </div>
+            </div>
+            <div class="mt-8">
+                <p>Email: sprowrite6@gmail.com</p>
+                <p>Phone: (+254)769900679</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-600 text-white p-4 text-center">
+        <p>© 2025 ProWrite Services. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
